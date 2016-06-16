@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "roscodes-1344",
+  "private_key_id": "19d84b80ef4869ef20072c3e4a23157d4f461830",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCBIaA4rlbLJwS7\n7OlggiHhgyEZM6KsO16yfwLZq6cF2Ak2Agznwm5M9Q0+JXykjUHpkfZvuTbe7KlA\nW4yNThK9Tg5JTz7qLu+Yy5PAkPaKkUuVZjDt6S2PNV1PhGDuxcqzT5QNAfG6lhdA\nc/zgbHS3APJmyzYwaHBhkQ0QdL5aYlT8faOISz75e6D4CGUikI2u+IpZCk1BqlJf\nm0BeUNsIJKRuEilREBolbOSIiLKxc78lIBbBFqKZh3cuCQgNuIOjwzjCxf4T7o97\nC3VOZyuT195rPUv25LpMEirsd3AwlO0pVvdJGWCXOGjSsybPZNsk7aKEe6n4gGpu\ngHaziiUtAgMBAAECggEAXdUXXdihTQHPWNcwRmaJRBtLA8sXm9uQVlggtBcdSQvQ\ntaQLyKTqDZXLx6rpxZC3oofj8Q8/JgIGgrODkHJ4/4Ims3KYHwd4JylW9gjgfZRS\nvf8B8v8LkhKO+WcSIK8tOdrLlCAjjRffUYB28oUc0pYnjjZ/6/EYKG2Edr6+S2I0\ninknqxAR9npbs/KFN2Egt82itjLP2kGQSokkezzAm2TVmv97KNuEfYOA04iI3r7g\ndr9I3E5khzZtenW1tisw9l8wPMIYFWEoqgv5kENqfnx+6Ek1FCpqosVJJFh/PqYZ\nHUNwRsJMszHlcr4dqfIn7C3u/Yx6dcO/xd33mPXowQKBgQDoAyyaC8fucAuGeYyc\nEQaXHIZos6Lll8FGKgU5qTikttbW+q9WGzRRw0kTrRLW6cWpBu/6ot5H0xPy6AaO\nS+xQr8XU5Rj8Bg+xpMK4Kn5L/GBi1tdR4qw1xDOEdqwRXQZakr/9TxOFCDHwdyoU\nSrEfi9+iHv01qrgmUJVfrXvrCQKBgQCOe25KaZpOYjce1gJKAoG3ZGgegfLWtV/Y\n1AKOMZPf9kwAbzgsdJQCpmkxP4bHaPvP4ajGL1Ga4HQddCXju8sma1xtuaV0wJKT\nKZ1B1PqWaGnf8y513Moj5DEdCd/dWkkRBwCyYejwgUgoRze/P7u2BCDEX+J2kjEg\nVqeNjVeeBQKBgFbvoY3TbkYlC9yGvS5ZntuOn7qp3RckxxIweqbBhu0JafVCF+Mu\n7Gravw41YwLOs/cDF3cWAi5tpGL3mEVHo7QUOQ/uDG+bIdRRxXjWy15TohZHJIWV\nZyv6acdv5EfZUKEtre0P7WOCz5uoO0dBOZ91fQW1kPHEF56bwW0Jh45pAoGATCAI\najuH1Q9GkfQXnwE92wULWBln7G1Ve1yyzNQSRNur+aNyqNXUaqIMm+JsGUivGX9g\nlBqeCBiaEU6IG+eu/6Tm6j0A+KMW7QeT3KN1Cz1YK+4ayaAgZBK8Zt5qvDJLzYwn\nRCdptG3uZo6+azEbEoGcHC96qI0tMDD8LnXw9R0CgYBI6lOfqFVkA9gL67gYC2Hl\n1wXtjeXiyt+vStW4KW4NlvlTX79gvGFVIZdA1Xq9zCuZRo2fihNLPHUoiJlSNotS\ntdLol5uqWlCAb2YtnvwICPDKAW7KCLa7pbNDSSEpUkALuinoMPA8vmopjr+iJHHH\nbaKlmVQXR7aXGYvmbPk8JQ==\n-----END PRIVATE KEY-----\n",
+  "client_email": "roscodes-projects@roscodes-1344.iam.gserviceaccount.com",
+  "client_id": "104304780128811368317",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://accounts.google.com/o/oauth2/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/roscodes-projects%40roscodes-1344.iam.gserviceaccount.com"
+}
