@@ -10,28 +10,20 @@ var ProjectsContainer = React.createClass({
       };
   },
   componentDidMount: function () {
-    
-    var projects = googlesheetHelpers.init();
-    
-    // .then(function (projects) {
-    //   console.log(projects);
-    // })
-      // googlesheetHelpers.init().then(function (projects) {
-
-      // console.log(projects);
-        this.setState({
-          isLoading: false,
-          projects: projects
-        });
-      // })
-    
-
+    googlesheetHelpers.init()
+    .then(function (projects) {
+      this.setState({
+        isLoading: false,
+        projects: projects
+      });
+    }.bind(this));
         
   },
 render: function () {
   console.log(this.state.projects);
   return (
-    <Projects isLoading={this.state.isLoading} projects={this.state.projects}/>
+    <Projects isLoading={this.state.isLoading} projects={this.state.projects} />
+ 
   )
 }
 });

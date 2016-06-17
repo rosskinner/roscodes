@@ -4,46 +4,43 @@ var API_KEY = 'AIzaSyCsfL4DLILxSHLFTyVA0udGZndTxF8IFWY';
 var IMAGE_FOLDER = '0BwFJ9kPqyXeSNGhTUHdkZjFQZFk';
 var IMAGE_FOLDER = 'https://googledrive.com/host/' + IMAGE_FOLDER + '/';
 console.log(IMAGE_FOLDER);
-
+var res;
 
 var projects = [];
 var project = {};
 
 
 function init () {
-  promise().then(function (res) {
-    console.log(res);
-    return res;
-  });
-
+  // return new Promise(function (resolve, reject) {
+    promise();
+  // });
   
 }
 
 function promise() {
-  return new Promise(function (resolve, reject) {
+  
     gapi.client.setApiKey(API_KEY);
-    loadSheetsApi(resolve);
-  });
+    loadSheetsApi();
+  
 }
 
-function loadSheetsApi(resolve) {
+function loadSheetsApi() {
   var discoveryUrl =
      'https://sheets.googleapis.com/$discovery/rest?version=v4';
-  gapi.client.load(discoveryUrl).then(
-    function () {
-      listEntries(resolve)
+    gapi.client.load(discoveryUrl).then( function () {
+      listEntries()
     });
 }
 
 
-function listEntries(resolve) {
+function listEntries() {
     gapi.client.sheets.spreadsheets.values.get({
       spreadsheetId: '14dCx9IbNuI97K9znJrH4G_7JcM4GDkiS42JGRkCjy-o',
       range: 'A:E'
     }).then(function(response) {
       var data = response.result.values;
       // console.log(data);
-      return resolve(transformData(data));
+      res(transformData(data));
     }, function(response) {
       console.log('Error: ' + response.result.error.message);
     });;
@@ -66,17 +63,14 @@ function transformData (data) {
 
 var googlesheetHelpers = {
   init: function () {
-    
-      
-      return gapi.load('client', init);
-    
-      
-      // gapi.client.setApiKey(API_KEY);
-      // loadSheetsApi();
+    return new Promise(function (resolve, reject) {
+      gapi.load('client', init);
+      res = resolve;
+    });
+
   },
   getProjects: function () {
     return loadSheetsApi();
-    // return projects;
   }
 }
 

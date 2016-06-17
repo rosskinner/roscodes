@@ -29,6 +29,9 @@ var Projects = function (props) {
     </div>
 };
 
-
+Projects.propTypes = {
+  isLoading: PropTypes.bool.isRequired,
+  projects: PropTypes.array
+}
 
 module.exports = Projects;

@@ -8,7 +8,7 @@ var Main = React.createClass({
   render: function () {
     // console.log(mat);
     return (
-      <div>
+      <div id="main">
         {this.props.children}
       </div>
     )
