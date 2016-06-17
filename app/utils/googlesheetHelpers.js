@@ -36,7 +36,7 @@ function loadSheetsApi() {
 function listEntries() {
     gapi.client.sheets.spreadsheets.values.get({
       spreadsheetId: '14dCx9IbNuI97K9znJrH4G_7JcM4GDkiS42JGRkCjy-o',
-      range: 'A:E'
+      range: 'A:F'
     }).then(function(response) {
       var data = response.result.values;
       // console.log(data);
@@ -48,6 +48,7 @@ function listEntries() {
 }
 
 function transformData (data) {
+  var projects = [];
   for (var i = 1; i < data.length; i++) {
     project = {};
     project.exp = data[i][0] ; 
@@ -55,6 +56,7 @@ function transformData (data) {
     project.description = data[i][2] ;
     project.tools = data[i][3] ;
     project.image = data[i][4] ;
+    project.color = data[i][5] ;
     projects.push(project);
   }
   // console.log(projects);
@@ -67,10 +69,9 @@ var googlesheetHelpers = {
       gapi.load('client', init);
       res = resolve;
     });
-
   },
-  getProjects: function () {
-    return loadSheetsApi();
+  getProject: function (id) {
+    return projects[id];
   }
 }
 

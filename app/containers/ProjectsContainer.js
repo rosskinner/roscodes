@@ -17,13 +17,11 @@ var ProjectsContainer = React.createClass({
         projects: projects
       });
     }.bind(this));
-        
   },
 render: function () {
-  console.log(this.state.projects);
+  // console.log(this.props);
   return (
     <Projects isLoading={this.state.isLoading} projects={this.state.projects} />
- 
   )
 }
 });

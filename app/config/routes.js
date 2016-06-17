@@ -7,12 +7,13 @@ var hashHistory = ReactRouter.hashHistory;
 
 var Main = require('../components/Main');
 var Home = require('../components/Home');
+var ImageContainer = require('../components/ImageContainer');
 
 var routes = (
-
   <Router history={hashHistory}>
     <Route path='/' component={Main}>
-      <IndexRoute component={Home} />
+      // <IndexRoute component={Home} />
+      <Route path=':project' component={ImageContainer} />
     </Route>
   </Router>
 )
