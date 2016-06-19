@@ -1,8 +1,7 @@
 var React = require('react');
-var ImageContainer = require('./ImageContainer');
 var Navigation = require('./Navigation');
 var Heading = require('./Heading');
-var ProjectsContainer = require('../containers/ProjectsContainer');
+var Projects = require('./Projects');
 
 var Home = React.createClass({
   render: function () {
@@ -13,10 +12,14 @@ var Home = React.createClass({
           <Navigation />
           <Heading title="i like being weird. weird's all i've got. that and my sweet style. sydney."/>
           
-          <ProjectsContainer />
+          <Projects projects={this.props.projects} />
          
         </div>
-        {this.props.children}
+
+        
+          {this.props.children}
+        
+
         
       </div>
 
