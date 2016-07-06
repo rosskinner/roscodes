@@ -12,7 +12,7 @@ var ImageContainer = React.createClass({
   componentDidMount: function () {
 
       googlesheetHelpers.getProject(this.props.location.search)
-      .then(function (project) {
+      .then(function (project) { 
         this.setState({
           projectColor: project.color,
           projectImage: googlesheetHelpers.getImage(project.image)
