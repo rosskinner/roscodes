@@ -20,15 +20,14 @@ var MainContainer = React.createClass({
       });
     }.bind(this));
   },
-render: function () {
-  return this.state.isLoading === true 
-  ? <Loading />
-  : <Main isLoading={this.state.isLoading} projects={this.state.projects}> 
-      {React.cloneElement(this.props.children, {key: this.props.location.pathname})}
+  render: function () {
+    return this.state.isLoading === true
+    ? <Loading />
+    : <Main isLoading={this.state.isLoading} projects={this.state.projects}>
+        {React.cloneElement(this.props.children, {key: this.props.location.pathname})}
+      </Main>
 
-    </Main>
-  
-}
+  }
 });
 
 module.exports = MainContainer;

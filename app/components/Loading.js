@@ -20,14 +20,14 @@ var Loading = React.createClass({
           text: this.state.text + '.'
         })
       }
-    }.bind(this), 300)   
+    }.bind(this), 300)
   },
   componentWillUnmount: function () {
     clearInterval(this.interval);
   },
   render: function () {
     return (
-      <div className="mdl-grid">
+      <div>
         <h1>{this.state.text}</h1>
       </div>
     )
